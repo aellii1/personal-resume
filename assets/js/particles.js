@@ -17,7 +17,7 @@
   addEventListener("pointermove", function (e) { mouse.x = e.clientX; mouse.y = e.clientY; });
   addEventListener("pointerleave", function () { mouse.x = mouse.y = -999; });
 
-  /* e = scroll progress from 0 to 1 (particles swirl and speed up as it grows) */
+  /* e = scroll progress from 0 to 1  */
   function render(e) {
     e = e || 0;
     ctx.clearRect(0, 0, W, H);
