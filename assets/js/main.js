@@ -112,4 +112,21 @@
   addEventListener("scroll", updateNav, { passive: true });
   addEventListener("resize", updateNav);
   updateNav();
+
+    /* ---------- hamburger menu ---------- */
+    var toggle = document.querySelector(".nav-toggle");
+    var menu = document.getElementById("nav-links");
+    function setMenu(open) {
+      menu.classList.toggle("open", open);
+      navBar.classList.toggle("menu-open", open);
+      toggle.setAttribute("aria-expanded", open);
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    }
+    toggle.addEventListener("click", function () { setMenu(!menu.classList.contains("open")); });
+    menu.addEventListener("click", function (e) { if (e.target.closest("a")) setMenu(false); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setMenu(false); });
+    document.addEventListener("click", function (e) {
+      if (!navBar.contains(e.target)) setMenu(false);
+    });
+    addEventListener("resize", function () { if (innerWidth > 760) setMenu(false); });
 })();
