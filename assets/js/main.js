@@ -129,4 +129,6 @@
       if (!navBar.contains(e.target)) setMenu(false);
     });
     addEventListener("resize", function () { if (innerWidth > 760) setMenu(false); });
+
+     document.getElementById("year").textContent = new Date().getFullYear();
 })();
