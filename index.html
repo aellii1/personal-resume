@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Fonts -->
+    <link rel="preload" href="assets/fonts/BricolageGrotesque-Variable.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Title -->
+    <title>My Personal Resume</title>
+</head>
+<body>
+    <canvas id="bg" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <a href="#home" class="logo">Francis Elijah</a>
+
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Content -->
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <div class="name">
+                    <h1>
+                        <span>Francis</span>
+                        <span>Elijah</span>
+                    </h1>
+                    <p class="role">IT Student &amp; Aspiring Developer</p>
+                    <p class="bio">
+                        Turning ideas into<br>
+                        fast, functional, and good-looking web experiences.
+                    </p>
+                </div>
+                <div class="hint" id="hint">Scroll<i></i></div>
+            </div>
+        </section>
+
+        <div class="rest">
+            <!-- About -->
+            <section id="about" class="section">
+                <h2 class="rise">About</h2>
+                <p class="lead rise">I'm an aspiring IT student with a passion for web development and design.</p>
+                <div class="tags rise">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>Responsive design</span>
+                </div>
+
+                <h3 class="sub rise">Education</h3>
+                <div class="item rise">
+                    <h4>Graduated at Voctech Academy Senior High School</h4>
+                    <p>Batch 2021 - 2024</p>
+
+                    <h4>Currently Student at Cebu Technological University - Main Campus</h4>
+                    <p>Bachelor of Science in Information Technology - 3rd year</p>
+                </div>
+
+                <h3 class="sub rise">Experience</h3>
+                <div class="item rise">
+                    <h4>Student Attendance Monitoring System</h4>
+                    <p>A Student Attendance Monitoring System is a web-based solution for educational institutions that automates the recording, tracking, and management of student attendance.</p>
+                    <div class="tags">
+                        <a class="repo" href="https://github.com/aellii1/git-student-attendance.git" target="_blank">Github</a>
+                    </div>
+                </div>
+                <div class="item rise">
+                    <h4>Personal Resume Website</h4>
+                    <p>This site: an animated portfolio with a particle background and scroll transitions.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                </div>
+            </section>
+    
+            <!-- Services -->
+            <section id="services" class="section">
+                <h2 class="rise">Services</h2>
+                <div class="service rise"><h3>Website development</h3><p>Personal sites, portfolios and small business pages built from scratch.</p></div>
+                <div class="service rise"><h3>Responsive design</h3><p>Layouts that look right on phones, tablets and desktops.</p></div>
+                <div class="service rise"><h3>Fixes and improvements</h3><p>Speed, accessibility and bug fixes for existing sites.</p></div>
+            </section>
+    
+        </div>
+
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <h2 class="rise">Contact</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="lead rise">Have a project or an opportunity in mind? Send me a message and I'll get back to you.</p>
+                    <p class="status rise"><i></i> Open to internships and freelance work</p>
+                </div>
+
+                <div class="contact-cards">
+                    <a class="ccard rise" href="mailto:znarfelijah@gmail.com">
+                        <span class="ctype">Email</span>
+                        <span class="chandle">znarfelijah@gmail.com</span>
+                        <span class="carrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="ccard rise" href="https://github.com/aellii1" target="_blank" rel="noopener noreferrer">
+                        <span class="ctype">GitHub</span>
+                        <span class="chandle">@aellii1</span>
+                        <span class="carrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="ccard rise" href="https://linkedin.com/in/yourname" target="_blank" rel="noopener noreferrer">
+                        <span class="ctype">LinkedIn</span>
+                        <span class="chandle">Your Name</span>
+                        <span class="carrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="ccard rise" href="https://facebook.com/yourname" target="_blank" rel="noopener noreferrer">
+                        <span class="ctype">Facebook</span>
+                        <span class="chandle">Your Name</span>
+                        <span class="carrow" aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/particles.js" type="text/javascript" defer></script>
+    <script src="assets/js/main.js" type="text/javascript" defer></script>
+</body>
+</html>
