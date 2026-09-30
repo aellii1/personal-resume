@@ -105,7 +105,6 @@
     var cut = parseFloat(getComputedStyle(rest).paddingTop) || 0;
     var y = navBar.getBoundingClientRect().height / 2;
 
-    /* white only while the bar is over the white section (not over Contact) */
     var overWhite = rr.top + cut / 2 <= y && rr.bottom - cut / 2 > y;
     navBar.classList.toggle("on-light", overWhite);
   }

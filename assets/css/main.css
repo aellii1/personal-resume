@@ -254,7 +254,7 @@ h2 {
   gap:8px;
   margin:32px 0 0;
   max-width:760px;
-  cursor: pointer
+  cursor: default
 }
 .item .tags{margin-top:14px}
 
